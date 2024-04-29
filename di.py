@@ -100,11 +100,11 @@ def main():
         print("    Active: %d" % ((devinfo[49] >> 2) & 0x1))
         print("    Fastboot ok: %d" % ((devinfo[49] >> 3) & 0x1))
         print("  Slot B:")
-        print("    Retry count: %d" % devinfo[50])
-        print("    Unbootable: %d" % (devinfo[51] & 0x1))
-        print("    Successful: %d" % ((devinfo[51] >> 1) & 0x1))
-        print("    Active: %d" % ((devinfo[51] >> 2) & 0x1))
-        print("    Fastboot ok: %d" % ((devinfo[51] >> 3) & 0x1))
+        print("    Retry count: %d" % devinfo[52])
+        print("    Unbootable: %d" % (devinfo[53] & 0x1))
+        print("    Successful: %d" % ((devinfo[53] >> 1) & 0x1))
+        print("    Active: %d" % ((devinfo[53] >> 2) & 0x1))
+        print("    Fastboot ok: %d" % ((devinfo[53] >> 3) & 0x1))
 
         # Print PS tags
         # PS tags are stored like this:
